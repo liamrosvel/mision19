@@ -1,0 +1,38 @@
+.about {
+	padding: 4em 0;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__elements-container {
+
+	}
+	&__img-container {
+		margin: 0;
+		padding: 0;
+	}
+	&__img {
+
+	}
+	&__copy-container {
+		margin-top: 2em;
+		border: 3px solid $color1;
+		padding: 1.5em 1em;
+		text-align: center;
+	}
+	&__copy,
+	&__name {
+		color: $color1;
+		font-size: 1.2em;
+		line-height: 1.6;
+	}
+	&__name {
+		display: block;
+		margin-top: 2em;
+		font-size: 1.4em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: $black;
+	}
+}

@@ -1,0 +1,74 @@
+//color black
+.icon-header {
+	text-align: center;
+	position: relative;
+	&:before {
+		content: " ";
+		display: block;
+		width: 7em;
+		height: 3px;
+		background-color: $color1;
+		position: absolute;
+		top: 1.5em;
+		left: 0;
+	}
+	&:after {
+		content: " ";
+		display: block;
+		width: 7em;
+		height: 3px;
+		background-color: $color1;
+		position: absolute;
+		top: 1.5em;
+		right: 0;
+	}
+}
+
+.icon-header-icon {
+	width: 3em;
+	fill: $color1;
+}
+
+.icon-header-title {
+	color: $color1;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+//color white
+.icon-header-w {
+	text-align: center;
+	position: relative;
+	&:before {
+		content: " ";
+		display: block;
+		width: 7em;
+		height: 3px;
+		background-color: rgba(#fff, .85);
+		position: absolute;
+		top: 1.5em;
+		left: 0;
+	}
+	&:after {
+		content: " ";
+		display: block;
+		width: 7em;
+		height: 3px;
+		background-color: rgba(#fff, .85);
+		position: absolute;
+		top: 1.5em;
+		right: 0;
+	}
+}
+
+.icon-header-icon-w {
+	width: 3em;
+	fill: rgba(#fff, .85);
+}
+
+.icon-header-title-w {
+	color: rgba(#fff, .85);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.5;
+}

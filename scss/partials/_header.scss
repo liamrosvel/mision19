@@ -1,0 +1,47 @@
+.header {
+	background-color: transparent;
+	padding: 1em 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 700;
+	transition: all 250ms ease-out;
+
+	&.header-scroll {
+		background-color: $color1;
+	}
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+	}
+	&__icons-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__lenguage {
+		color: #fff;
+		font-size: 1.7em;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	&__logo {
+		width: 11em;
+	}
+	&__logo-number {
+		fill: $color2;
+	}
+	&__logo-type,
+	&__icon-menu {
+		fill: #fff;
+	}
+	&__icon-menu {
+		width: 2.5em;
+		position: relative;
+		z-index: 800;
+		cursor: pointer;
+	}
+}

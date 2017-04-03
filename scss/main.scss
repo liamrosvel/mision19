@@ -4,6 +4,48 @@
     box-sizing: border-box;
 }
 
+//COLOR VARIABLES
+$color1: #161516;
+$color2: #B11623;
+
+//FONTS
+
+//font-family General text
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+//font-weight General text
+$normal: 400;
+$bold: 700;
+$black: 900;
+
+//font-family titles
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700');
+
+//font-family varible
+$fontTitle: 'Dancing Script', cursive;
+
+
+//GENERAL STYLES
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 img {
     max-width: 100%;
 }
+
+//@imports
+
+@import "partials/header";
+@import "partials/main-nav";
+@import "partials/landing";
+@import "partials/icon";
+@import "partials/about";
+@import "partials/menu";
+@import "partials/service";
+@import "partials/review";
+@import "partials/blog";
+@import "partials/chef";
+@import "partials/contact";
+@import "partials/footer";

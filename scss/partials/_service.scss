@@ -1,0 +1,47 @@
+.service {
+	background-color: $color2;
+	padding: 4em 0;
+	color: #fff;
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__elements-container {
+
+	}
+	&__img-container {
+		margin: 0;
+		padding: 0;
+	}
+	&__img {
+
+	}
+	&__copy-container {
+		margin-top: 2em;
+		border: 3px solid #fff;
+		padding: 1.5em 1em;
+		text-align: center;
+	}
+	&__copy {
+		color: #fff;
+		font-size: 1.2em;
+		line-height: 1.6;
+	}
+	&__button {
+		display: block;
+		line-height: 3;
+		font-size: 1.1em;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 2px;
+		border: 2px solid #fff;
+		border-radius: 5em;
+		margin-bottom: 1em;
+		transition: all 250ms ease-in;
+		&:hover {
+			background-color: #fff;
+			color: $color1;
+		}
+	}
+}
