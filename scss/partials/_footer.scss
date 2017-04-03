@@ -1,0 +1,71 @@
+.footer {
+	padding: 6em 0;
+	background-color: $color1;
+	color: rgba(#fff, .85);
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	//svg logo bar20
+	&__invitation {
+		margin-bottom: 7em;
+		cursor: pointer;
+	}
+	&__invitation-link {
+		text-decoration: none;
+	}
+	&__title-bar20 {
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: #fff;
+		font-size: 1.5em;
+	}
+	&__img-container {
+		margin: 0 auto;
+		padding: 0;
+		width: 10em;
+	}
+	//svg logo styles
+	&__logo {
+		fill: rgba(#fff, .85);
+		width: 12em;
+	}
+	//social media
+	&__social {
+		margin: 3em 0;
+	}
+	&__social-list {
+		margin: 0;
+		padding-left: 0;
+		list-style: none;
+	}
+	&__social-item {
+		display: inline-block;
+	}
+	&__social-icon-fb {
+		width: 1.2em;
+	}
+	&__social-icon-tw {
+		width: 2em;
+		margin: 0 2.5em;
+	}
+	&__social-icon-tr {
+		width: 2.5em;
+	}
+	&__social-icon-fb,
+	&__social-icon-tw,
+	&__social-icon-tr {
+		fill: rgba(#fff, .85);
+		&:hover {
+			fill: #fff;
+		}
+	}
+	&__copy-container {
+
+	}
+	&__copyright {
+		line-height: 1.6;
+	}
+}

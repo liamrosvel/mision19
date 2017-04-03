@@ -1,0 +1,73 @@
+.contact {
+	padding: 4em 0;
+	background-color: rgba(#ccc, .15);
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__header-description {
+		font-size: 1.4em;
+		line-height: 1.6;
+	}
+	//google maps styles
+	&__map-wrapper {
+		position: relative;
+		height: 0;
+		padding-bottom: 70%;
+	}
+	&__map {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+	}
+	//info styles
+	&__info-container {
+		margin-top: 3em;
+		text-align: center;
+	}
+	&__info-1 {
+
+	}
+	&__info-2 {
+		
+	}
+	&__info-title {
+		font-size: 1.5em;
+		color: $color1;
+	}
+	&__info-address,
+	&__info-phone {
+		color: rgba($color1, .5);
+		font-size: 1.2em;
+		line-height: 1.5;
+	}	
+	&__info-phone {
+
+	}
+	&__button-container {
+		margin-top: 3em;
+	}
+	&__button {
+		display: block;
+		line-height: 3;
+		font-size: 1.1em;
+		font-weight: $bold;
+		color: $color1;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 2px;
+		border: 2px solid $color1;
+		border-radius: 5em;
+		margin-bottom: 1em;
+		transition: all 250ms ease-in;
+		&:hover {
+			background-color: $color2;
+			border-color: $color2;
+			color: #fff;
+		}
+	}
+}

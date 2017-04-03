@@ -1,0 +1,30 @@
+.blog {
+	padding: 4em 0;
+	background-color: $color1;
+	color: rgba(#fff, .85);
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__header-description {
+		font-size: 1.4em;
+		line-height: 1.6;
+		margin-bottom: 2em;
+	}
+	//item styles
+	&__items-container {
+		
+	}
+	&__item {
+		background-color: #262626;
+		margin-bottom: 2em;
+	}
+	&__item-img-container {
+		margin: 0;
+		padding: 0;
+	}
+	&__item-body-content {
+		padding: 1em;
+	}
+}

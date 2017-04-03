@@ -1,0 +1,42 @@
+.review {
+	padding: 4em 0;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__header-title-style {
+		color: $color2;
+	}
+	&__img-container {
+		margin: 3em 0 1em;
+		padding: 0;
+	}
+	&__copy-container {
+		padding: 1em;
+		text-align: center;
+	}
+	&__copy {
+		color: $color1;
+		font-size: 1.2em;
+		line-height: 1.6;
+	}
+	&__button {
+		display: block;
+		line-height: 3;
+		font-size: 1.1em;
+		font-weight: $bold;
+		color: $color1;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 2px;
+		border: 2px solid $color1;
+		border-radius: 5em;
+		margin-bottom: 1em;
+		transition: all 250ms ease-in;
+		&:hover {
+			background-color: $color1;
+			color: #fff;
+		}
+	}
+}
