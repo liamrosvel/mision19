@@ -1,6 +1,10 @@
 .review {
 	padding: 4em 0;
 
+	@media screen and (min-width: 640px) {
+		padding: 8em 0;
+	}
+
 	&__container {
 		width: 90%;
 		margin: 0 auto;
@@ -9,8 +13,12 @@
 		color: $color2;
 	}
 	&__img-container {
-		margin: 3em 0 1em;
+		margin: 3em auto 1em;
 		padding: 0;
+
+		@media screen and (min-width: 768px) {
+			width: 70%;
+		}
 	}
 	&__copy-container {
 		padding: 1em;
@@ -34,9 +42,16 @@
 		border-radius: 5em;
 		margin-bottom: 1em;
 		transition: all 250ms ease-in;
+		
 		&:hover {
 			background-color: $color1;
 			color: #fff;
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 50%;
+			margin: 2em auto;
+			font-weight: $bold;
 		}
 	}
 }

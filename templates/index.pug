@@ -47,6 +47,9 @@ html(lang="es")
         main.main
             section.landing
                 div.landing__container
+                    div.landing__video-wrapper
+                        video.landing__video(playsinline autoplay muted loop poster="./assets/poster.jpg")
+                            source(src="./assets/video.mp4")
                     div.landing__elements-content
                         header.landing__header
                             h2.landing__header-title-1 vive una
@@ -113,28 +116,32 @@ html(lang="es")
                             |Vive una experiencia culinaria con platillos preparados especialmente para ti.
                     div.menu__items-container
                         article.menu__item-1
-                            h3.menu__item-title platillos
+                            div.menu__item-card-title-container
+                                h3.menu__item-title platillos
                             div.menu__item-card-hidden
                                 h3.menu__item-card-title platillos
                                 p.menu__item-card-text
                                     |Nuestra variedad de platillos cambia por temporada con la finalidad de que puedan degustar cada uno de ellos tomando en cuenta la amplia lista que existe en nuestra cocina.
                                 a.menu__item-card-button(href="#") ¡conócelo!
                         article.menu__item-2
-                            h3.menu__item-title postres
+                            div.menu__item-card-title-container
+                                h3.menu__item-title postres
                             div.menu__item-card-hidden
                                 h3.menu__item-card-title postres
                                 p.menu__item-card-text
                                     |Disfruta de una gran variedad de postres con ingredientes selectos de nuestros proveedores locales.
                                 a.menu__item-card-button(href="#") ¡conócelo!
                         article.menu__item-3
-                            h3.menu__item-title vinos
+                            div.menu__item-card-title-container
+                                h3.menu__item-title vinos
                             div.menu__item-card-hidden
                                 h3.menu__item-card-title vinos
                                 p.menu__item-card-text
                                     |Orgullosos portadores de los mejores vinos de la Baja hechos con uvas cosechadas en el Valle de Guadalupe en Ensenada.
                                 a.menu__item-card-button(href="#") ¡conócelo!
                         article.menu__item-4
-                            h3.menu__item-title mixología
+                            div.menu__item-card-title-container
+                                h3.menu__item-title mixología
                             div.menu__item-card-hidden
                                 h3.menu__item-card-title mixología
                                 p.menu__item-card-text
@@ -200,6 +207,8 @@ html(lang="es")
                                 p Por <a href="#">Mision19</a>
                                 h2 Este es un gran título para un gran artículo de Mision19
                                 a(href="#") Leer más...
+                    div.blog__button-container
+                        a.blog__button(href="#") ir al blog
             section.chef
                 div.chef__container
                     header.icon-header

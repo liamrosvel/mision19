@@ -2,6 +2,10 @@
 	padding: 4em 0;
 	background-color: rgba(#ccc, .15);
 
+	@media screen and (min-width: 640px) {
+		padding: 8em 0;
+	}
+
 	&__container {
 		width: 90%;
 		margin: 0 auto;
@@ -64,10 +68,17 @@
 		border-radius: 5em;
 		margin-bottom: 1em;
 		transition: all 250ms ease-in;
+
 		&:hover {
 			background-color: $color2;
 			border-color: $color2;
 			color: #fff;
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 50%;
+			margin: 2em auto;
+			font-weight: $bold;
 		}
 	}
 }

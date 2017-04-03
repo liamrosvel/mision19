@@ -15,6 +15,11 @@
 		align-items: center;
 	}
 
+	@media screen and (min-width: 768px) {
+		width: 50%;
+		padding: 10em 3em 0;
+	}
+
 	&.show-menu {
 		right: 0;
 	}
@@ -27,7 +32,16 @@
 	}
 	&__list {
 		text-align: center;
-		width: 70%;
+
+		@media screen and (max-width: 767px) {
+			width: 70%;		
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 100%;
+			text-align: right;
+			margin-bottom: 6em;
+		}
 	}
 	&__list-item {
 		margin-bottom: 1.7em;
@@ -35,30 +49,71 @@
 	&__link {
 		text-decoration: none;
 		text-transform: uppercase;
-		color: #fff;
+		color: rgba(#fff, .85);
 		font-weight: $bold;
 		font-size: 1.8em;
 		line-height: 1.5;
+
+		@media screen and (min-width: 768px) {
+			font-size: 2.5em;
+			&:hover {
+				color: #fff;
+			}
+		}
 	}
 	&__link-hidden {
 
 	}
 	//social icons
 	&__social-list {
+
 		@media screen and (max-width: 767px) {
 			display: none;
 		}
+
+		@media screen and (min-width: 768px) {
+			margin-left: 5em;
+		}
+
 	}
 	&__social-item {
+
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+		}
 
 	}
 	&__social-icon-fb {
 
+		@media screen and (min-width: 768px) {
+			width: 1.3em;
+		}
+
 	}
 	&__social-icon-tw {
 
+		@media screen and (min-width: 768px) {
+			width: 2.2em;
+			margin: 0 3em;
+		}	
+
 	}
 	&__social-icon-tr {
+		
+		@media screen and (min-width: 768px) {
+			width: 2.4em;
+		}
 
+	}
+	&__social-icon-fb,
+	&__social-icon-tw, 
+	&__social-icon-tr {
+
+		@media screen and (min-width: 768px) {
+			fill: rgba(#fff, .85);
+			&:hover {
+				fill: #fff;
+			}
+		}
 	}
 }

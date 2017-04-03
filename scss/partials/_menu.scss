@@ -3,6 +3,10 @@
 	color: rgba(#fff, .85);
 	background-color: $color1;
 
+	@media screen and (min-width: 640px) {
+		padding: 8em 0;
+	}
+
 	&__container {
 		width: 90%;
 		margin: 0 auto;
@@ -14,6 +18,12 @@
 	//item styles
 	&__items-container {
 		margin-top: 4em;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
 	}
 	&__item-1 {
 		background: url(../assets/item-carta-1.jpg) 50% 50% / cover no-repeat;
@@ -36,11 +46,28 @@
 		position: relative;
 		width: 100%;
 		height: 20em;
+		overflow: hidden;
 
 		display: flex;
 		justify-content: center;
-		align-items: flex-end;
+		align-items: center;
 		cursor: pointer;
+
+		&:hover .menu__item-card-hidden {
+			opacity: .95;
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 48%;
+			height: 27em;
+		}
+	}
+	&__item-card-title-container {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
 	}
 	&__item-title {
 		text-transform: uppercase;
@@ -70,21 +97,17 @@
 	}
 	//card hidden
 	&__item-card-hidden {
-
-		@media screen and (max-width: 1023px) {
+	
+		@media screen and (max-width: 767px) {
 			display: none;
 		}
 
-		@media screen and (min-width: 1024px) {
+		@media screen and (min-width: 768px) {
 			background-color: $color1;
-			opacity: .95;
 			padding: 1.5em 1em;
-			position: absolute;
-			top: 1em;
-			left: 1em;
-			width: 90%;
-
-			text-align: center;	
+			opacity: 0;
+			text-align: center;
+			transition: all 150ms ease-in;
 		}
 	}
 	&__item-card-title {
@@ -107,6 +130,20 @@
 		line-height: 1.6;
 	}
 	&__item-card-button {
-
+		display: inline-block;
+		line-height: 3;
+		padding: 0 2em;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		border-radius: 5em;
+		border: 2px solid rgba(#fff, .85);
+		transition: all 250ms ease-in;
+		&:hover {
+			background-color: $color2;
+			border-color: $color2;
+			color: #fff;
+		}
 	}
 }
