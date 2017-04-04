@@ -768,7 +768,23 @@ img {
     margin: 0;
     padding: 0; }
   .blog__item-body-content {
-    padding: 1em; }
+    padding: 1.5em 1em; }
+  .blog__item-body-user {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 700;
+    margin-top: 0; }
+  .blog__item-body-user-name, .blog__item-body-more {
+    text-decoration: none;
+    color: #fff; }
+    .blog__item-body-user-name:hover, .blog__item-body-more:hover {
+      text-decoration: underline; }
+  .blog__item-body-title {
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.85); }
+  .blog__item-body-more {
+    font-size: 1.1em; }
   .blog__button-container {
     text-align: center;
     margin: 4em 0 0; }

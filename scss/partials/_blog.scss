@@ -61,9 +61,33 @@
 		margin: 0;
 		padding: 0;
 	}
+	//body content styles
 	&__item-body-content {
-		padding: 1em;
+		padding: 1.5em 1em;
 	}
+	&__item-body-user {
+		color: rgba(#fff, .85);
+		font-weight: $bold;
+		margin-top: 0;
+	}
+	&__item-body-user-name,
+	&__item-body-more {
+		text-decoration: none;
+		color: #fff;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__item-body-title {
+		font-weight: $normal;
+		font-size: 1.4em;
+		line-height: 1.4;
+		color: rgba(#fff, .85);
+	}
+	&__item-body-more {
+		font-size: 1.1em;
+	}
+	//button section
 	&__button-container {
 		text-align: center;
 		margin: 4em 0 0;
