@@ -19,6 +19,10 @@
 		height: 100vh;	
 	}
 
+	@media screen and (min-width: 1024px) {
+		position: relative;
+	}	
+
 	&__container {
 		width: 90%;
 		margin: 0 auto;
@@ -27,6 +31,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@media screen and (min-width: 1024px) {
+			width: 85%;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1110px;
+		}
 	}
 	//video styles
 	&__video-wrapper {
@@ -36,7 +48,15 @@
 		}
 	}
 	&__video {
-
+		
+		@media screen and (min-width: 1024px) {
+			position: absolute;
+			top: 0;
+			right: 0;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: -100;
+		}
 	}
 	//elements landing
 	&__elements-content {
@@ -48,6 +68,10 @@
 
 		@media screen and (min-width: 768px) {
 			width: 25em;
+		}
+
+		@media screen and (min-width: 1200px) {
+			margin-top: 4em;
 		}
 	}
 	&__header {

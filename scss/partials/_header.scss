@@ -16,6 +16,14 @@
 		width: 90%;
 		margin: 0 auto;
 		position: relative;
+
+		@media screen and (min-width: 1024px) {
+			width: 85%;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 1110px;
+		}
 	}
 	&__icons-container {
 		display: flex;

@@ -42,6 +42,10 @@
 			text-align: right;
 			margin-bottom: 6em;
 		}
+
+		@media screen and (min-width: 1024px) {
+			margin-bottom: 3em;
+		}
 	}
 	&__list-item {
 		margin-bottom: 1.7em;
@@ -60,9 +64,17 @@
 				color: #fff;
 			}
 		}
+
+		@media screen and (min-width: 1200px) {
+			font-size: 3.2em;
+			font-weight: $black;
+		}
 	}
 	&__link-hidden {
-
+		
+		@media screen and (min-width: 1024px) {
+			display: none;
+		}
 	}
 	//social icons
 	&__social-list {
@@ -72,7 +84,8 @@
 		}
 
 		@media screen and (min-width: 768px) {
-			margin-left: 5em;
+			position: absolute;
+			right: 3em;
 		}
 
 	}
